@@ -1,0 +1,45 @@
+.wrapper {
+  text-align: center;
+  padding: 64px 20px;
+  color: #6b7280;
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fee2e2;
+    color: #dc2626;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 1.15rem;
+    color: #374151;
+    margin: 16px 0 8px;
+  }
+
+  .message {
+    font-size: 0.9rem;
+    margin: 0 0 20px;
+  }
+
+  .retryButton {
+    padding: 10px 24px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #1d4ed8;
+    }
+  }
+}

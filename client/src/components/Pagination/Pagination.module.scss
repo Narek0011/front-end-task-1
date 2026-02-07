@@ -1,0 +1,86 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+ 
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+
+  .info {
+    font-size: 0.88rem;
+    color: #6b7280;
+    font-weight: 500;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .pageButton,
+    .arrow {
+      min-width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      background: #fff;
+      color: #374151;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+
+      &:hover:not(:disabled) {
+        border-color: #2563eb;
+        color: #2563eb;
+        background: #eff6ff;
+      }
+
+      &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+    }
+
+    .arrow {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+
+    .active {
+      background: #2563eb;
+      border-color: #2563eb;
+      color: #fff;
+
+      &:hover {
+        background: #1d4ed8;
+        border-color: #1d4ed8;
+        color: #fff;
+      }
+    }
+
+    .ellipsis {
+      min-width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      font-size: 1rem;
+    }
+  }
+}

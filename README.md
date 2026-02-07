@@ -19,3 +19,32 @@ Implement a dynamic product filtering system using **React.js**.
 
 ## Expected Deliverables
 - A fully functional, responsive, and user-friendly product listing page with filtering and pagination.
+
+## How to Run
+
+### 1. Start the API server
+
+```bash
+cd products
+npm install
+node server.js
+```
+
+The API will be available at `http://localhost:3001`.
+
+### 2. Start the client
+
+```bash
+cd client
+npm install
+npm start
+```
+
+The app will open at `http://localhost:3000`.
+
+## How to Run Tests
+
+```bash
+cd client
+npm test
+```
