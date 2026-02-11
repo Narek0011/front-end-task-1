@@ -1,4 +1,4 @@
-# Skillex
+
 ## Task: Products List with filters
 
 ## Objective
